@@ -1,4 +1,6 @@
 import BlogCard from "./BlogCard";
+// La idea aquí es que con ayuda de alguna API (como graph de meta) obtener las ultimas n publicaciones de la página de facebook
+// Pero en lo que eso pasa, pues a hacer a mano para ver como quedaría
 
 const Blog = () => {
     return (
@@ -8,33 +10,28 @@ const Blog = () => {
           </h2>
         <div className="flex flex-wrap sm:w-4/5 w-full mx-auto justify-center items-center lg:px-0 px-4 lg:py-16 py-2 ">
             <BlogCard data = { {
-              title: "Comienza el día con nuestro pan recién horneado", 
-              field: "El pan recién horneado es la mejor manera de comenzar el día! Ven a nuestra panadería y prueba nuestros deliciosos panes frescos.",
-              uri: "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+              content: "Durante el mes de mayo luchamos contra el hambre a través de nuestra colecta #KilosPorLaNutricion buscando la donación de alimento básico como: frijol, arroz, aceite, lentejas, etc 🍚🤗\nConoce cómo estos son de suma importancia para los Bancos de Alimentos y para las comunidades atendidas a través de la Red BAMX 💪 \n#RedBAMX #AlimentoBasico",
+              uri: "https://scontent.fgdl5-4.fna.fbcdn.net/v/t39.30808-6/436470151_741637214836499_5119443060105487322_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QcG5TpVdoncQ7kNvgHnNRkN&_nc_ht=scontent.fgdl5-4.fna&oh=00_AYCE8NA9fl-XdTC6FxTnxdWiGqGvDzd0k3ygFtH5yyRYzQ&oe=66497E42",
               redirect: ""
             } } />
             <BlogCard data = { {
-              title: "Postres y pasteles deliciosos para llevar a casa", 
-              field: "¿Buscas un postre delicioso para llevar a casa? ¡Tenemos una gran variedad de pasteles y postres para satisfacer tus antojos!.",
-              uri: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80",
+              content: "El trabajo duro siempre da buenos frutos, y en este Día del Trabajo queremos compartir contigo algunos de nuestros los resultados del informe 2023.\n¡Descubre nuestras metas alcanzadas! 🌟\n#RedBAMX #NosLlenaAlimentar #Logros",
+              uri: "https://scontent.fgdl5-2.fna.fbcdn.net/v/t39.30808-6/440795429_733248652342022_7260290730274891263_n.jpg?stp=c0.5000x0.3300f_dst-jpg_e15_p1115x1115_q60_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fgdl5-2.fna&_nc_cat=107&_nc_ohc=97CmZZnf5kwQ7kNvgEnyueH&ccb=1-7&_nc_sid=5f2048&oh=00_AYAa1fiHdG3m0qW4gBEyuj9xT3qKKNfOslvuXqdVn-S8sQ&oe=664984D3",
               redirect: ""
             } } />
             <BlogCard data = { {
-              title: "Panes artesanales horneados a diario", 
-              field: "¿Eres un amante del pan? ¡Entonces no puedes perderte nuestra selección de panes artesanales horneados a diario con ingredientes frescos y naturales!",
-              uri: "https://images.unsplash.com/photo-1567042661848-7161ce446f85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80",
+              content: "¡La alimentación es un derecho básico de todos l@s niñ@s! 💪 Conviértete en un #InversionistaBAMX y sigamos invirtiendo en la alimentación de estas nuevas generaciones 🙌🍏\nObtén todos los detalles dando click en el link de nuestra bio o en www.bamx.org.mx/dona-efectivo/ \n#DiadelNiño #HambreCero #Superheroes #RedBAMX",
+              uri: "https://scontent.fgdl5-4.fna.fbcdn.net/v/t39.30808-6/440962516_733246639008890_5158948751424600647_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=bSp8P7xp_1YQ7kNvgHV3AhD&_nc_oc=Adi2Ifhd3efRHm-ik_CUVGTNnUONBOiO6wZcDM39zdShuGx47wIFLcyWfxAEX88c7GA&_nc_ht=scontent.fgdl5-4.fna&oh=00_AYAR2LLaRX2O2NV-77TZ_h1PpY8EBLFMJDYL4cbi7R8pjw&oe=6649775A",
               redirect: ""
             } } />
             <BlogCard data = { {
-              title: "Regala una cesta de panes y dulces", 
-              field: "¿Necesitas un regalo especial para alguien? ¡Nuestros cestas de regalo con panes y dulces recién horneados son la elección perfecta!",
-              uri: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
+              content: "🌎🌿¡Celebra el Día de la Tierra desde la comodidad de tu hogar! Recuerda que las pequeñas acciones generan un gran impacto🌸#DiadelaTierra#RedBAMXVerde#Sostenibilidad",
+              uri: "https://scontent.fgdl5-4.fna.fbcdn.net/v/t39.30808-6/439647005_729102976089923_6301917238654910712_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1RHrXMf4M1MQ7kNvgF31KSt&_nc_ht=scontent.fgdl5-4.fna&oh=00_AYDLX29byOxpGz2OwWh4mprBC7gcLhPoxu_onQ5QwPtLng&oe=66497975",
               redirect: ""
             } } />
             <BlogCard data = { {
-              title: "Prueba nuestro pan de masa madre para un sabor único e inolvidable", 
-              field: "¿Te apetece algo diferente? ¡Prueba nuestro pan de masa madre, elaborado con ingredientes naturales y horneado a la perfección para un sabor único e inolvidable!",
-              uri: "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+              content: "¡Aclaramos todas tus dudas! 🤓 Hoy en la Red BAMX te explicamos la diferencia entre los paquetes alimentarios y las despensas 🤔¡Cuéntanos en comentarios si tienes alguna otra duda! #Informacion #Dudas #Pregunta #RedBAMX #Respuesta",
+              uri: "https://scontent.fgdl5-2.fna.fbcdn.net/v/t39.30808-6/436014820_725178376482383_8378202602433701299_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vhCG72FgoqEQ7kNvgFskw4q&_nc_ht=scontent.fgdl5-2.fna&oh=00_AYA7Bw07M8jSR6ydUObSKHlkOwMrbc2n-gEtxupZo72Vmw&oe=66499766",
               redirect: ""
             } } />
         </div>
