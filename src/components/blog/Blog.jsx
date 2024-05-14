@@ -29,11 +29,6 @@ const Blog = () => {
               uri: "https://scontent.fgdl5-4.fna.fbcdn.net/v/t39.30808-6/439647005_729102976089923_6301917238654910712_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1RHrXMf4M1MQ7kNvgF31KSt&_nc_ht=scontent.fgdl5-4.fna&oh=00_AYDLX29byOxpGz2OwWh4mprBC7gcLhPoxu_onQ5QwPtLng&oe=66497975",
               redirect: ""
             } } />
-            <BlogCard data = { {
-              content: "¡Aclaramos todas tus dudas! 🤓 Hoy en la Red BAMX te explicamos la diferencia entre los paquetes alimentarios y las despensas 🤔¡Cuéntanos en comentarios si tienes alguna otra duda! #Informacion #Dudas #Pregunta #RedBAMX #Respuesta",
-              uri: "https://scontent.fgdl5-2.fna.fbcdn.net/v/t39.30808-6/436014820_725178376482383_8378202602433701299_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vhCG72FgoqEQ7kNvgFskw4q&_nc_ht=scontent.fgdl5-2.fna&oh=00_AYA7Bw07M8jSR6ydUObSKHlkOwMrbc2n-gEtxupZo72Vmw&oe=66499766",
-              redirect: ""
-            } } />
         </div>
       </div>
     );
