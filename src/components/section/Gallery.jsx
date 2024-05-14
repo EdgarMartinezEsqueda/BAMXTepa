@@ -5,7 +5,7 @@ const Gallery = () => {
     return (
       <section className="overflow-hidden text-neutral-700 bg-bgClaro">
         <div className="container mx-auto lg:px-32 lg:pt-24 text-center">
-          <h2 className="text-3xl font-bold sm:text-4xl">Galería de imagenes</h2>
+          <h2 className="font-bold text-4xl">Galería de imagenes</h2>
           <p className="mt-4 text-xl">Explora nuestro trabajo y impacto en la comunidad a través de estas imágenes.</p>
         </div>
         <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-8">
