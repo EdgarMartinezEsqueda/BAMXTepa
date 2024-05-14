@@ -31,13 +31,6 @@ function LandingPage() {
           </ul>
         </div>
         <div>
-          <h2>Visión</h2>
-          <p>
-            Lograr un nuevo modelo de familia con cero hambre y una
-            vision clara del desarrollo y auto sustentabilidad.
-          </p>
-        </div>
-        <div>
           <h2>Valores</h2>
           <ul>
             <li>Apoyo al projimo</li>
