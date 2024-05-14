@@ -1,14 +1,13 @@
 import Imagen from "assets/image2.jpg";
 const SectionWithImage = () => {
     return (
-      <section className="overflow-hidden  sm:grid sm:grid-cols-2 sm:items-center" >
-        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div className="mx-auto max-w-xl text-center sm:text-left">
+      <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center max-h-[400px]" >
+        <div className=" p-4">
+          <div className="mx-auto max-w-2xl text-center sm:text-left">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
               Misión
             </h2>
-
-            <div className="hidden text-gray-500 md:mt-4 md:block md:text-xl">
+            <div className=" text-gray-500 md:text-xl">
               <ul className="list-disc list-inside">
                 <li>Lograr liberar a familias de la situacion de pobreza alimentaria y de oportunidades, por medio del desarrollo de capacidades.</li>
                 <li>Promover la participacion activa de las personas, evitando a toda costa ser paternalistas o asistencialistas.</li>
@@ -19,7 +18,7 @@ const SectionWithImage = () => {
           </div>
         </div>
 
-        <img alt="Banco de Alimentos" src={Imagen} className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]" />
+        <img alt="Banco de Alimentos" src={Imagen} className=" w-full object-cover object-top sm:self-end sm:rounded-tl-[30px] h-96 md:rounded-tl-[60px]" />
       </section>
     );
 };
