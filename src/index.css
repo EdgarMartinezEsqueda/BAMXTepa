@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Omnes";
+    src: url("/fonts/Omnes/Omnes\ Regular.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Omnes";
+    src: url("/fonts/Omnes/Omnes\ Italic.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Omnes";
+    src: url("/fonts/Omnes/Omnes\ Light.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Omnes";
+    src: url("/fonts/Omnes/Omnes\ Medium.ttf");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Omnes";
+    src: url("/fonts/Omnes/Omnes\ Hairline.ttf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Locator";
+    src: url("/fonts/Locator/LocatorDisplay\ Black.ttf");
+}
+
+html {
+    font-family: "Omnes";
+    font-weight: bold;
+}
+
+h1{
+    font-family: "Locator" ;
+}
+
+h1, li, p, label, button{
+    color: var(--gray);
+}
+
+h2 {
+    color: var(--green);
+}
+
+h3 {
+    color: var(--red);
+}
+
+h4 {
+    color: var(--yellow);
+}
+
+h1, h2, h3, h4{
+    font-weight: bolder;
+}
+
