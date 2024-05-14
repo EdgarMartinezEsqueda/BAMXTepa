@@ -1,6 +1,6 @@
 const BlogCard = (props) => {
     return (
-        <article className="group md:basis-60 m-3">
+        <article className="group md:basis-60 m-3 max-w-60">
             <img alt="IMG" src={ props.data.uri } className="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]" />
 
             <div className="p-4">
