@@ -22,19 +22,19 @@ const Footer = () => {
               </p>
               <ul className="mt-8 flex  gap-6 lg:justify-start md:gap-8">
                 <li>
-                  <a href="www.facebook.com" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
+                  <a href="https://www.facebook.com/BAMXTepatitlan" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
                     <span className="sr-only">Facebook</span>
                    <FacebookOutlinedIcon/>
                   </a>
                 </li>
                 <li>
-                  <a href="www.instagram.com" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
+                  <a href="https://www.instagram.com/bamxtepatitlan/" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
                     <span className="sr-only">Instagram</span>
                     <InstagramIcon/>
                   </a>
                 </li>
                 <li>
-                  <a href="www.twitter.com" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
+                  <a href="https://twitter.com/bamxtepatitlan" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
                     <span className="sr-only">Twitter</span>
                     <TwitterIcon/>
                   </a>

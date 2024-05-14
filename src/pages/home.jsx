@@ -30,19 +30,6 @@ function LandingPage() {
           </ul>
         </div>
         <div>
-          <h2>Misión</h2>
-          <p>
-            Lograr liberar a familias de la situacion de pobreza alimentaria
-            y de oportunidades, por medio del desarrollo de capacidades.
-            Promover la participacion activa de las personas, evitando a 
-            toda costa ser paternalistas o asistencialistas. 
-            Concientizar a las familias que los adultos pero principalmente
-            los niños, necesitan estudios, ademas de comida.
-            Motivar a las personas para que desarrollen sus capacidades y
-            potencialidades, logrando asi, salir del circulo de la pobreza.
-          </p>
-        </div>
-        <div>
           <h2>Visión</h2>
           <p>
             Lograr un nuevo modelo de familia con cero hambre y una
