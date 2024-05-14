@@ -30,17 +30,6 @@ function LandingPage() {
             <li>Nochistlan (Zacatecas)</li>
           </ul>
         </div>
-        <div>
-          <h2>Valores</h2>
-          <ul>
-            <li>Apoyo al projimo</li>
-            <li>Gratitud</li>
-            <li>Honestidad</li>
-            <li>Solidaridad</li>
-            <li>Voluntad</li>
-            <li>Compromiso</li>
-          </ul>
-        </div>
       </main>
       <Banner />
       <AboutUs />

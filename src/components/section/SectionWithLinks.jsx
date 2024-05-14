@@ -6,7 +6,7 @@ import BackHandIcon from '@mui/icons-material/BackHand';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 const SectionWithLinks = () => {
     return (
-      <section className="bg-bgClaro">
+      <section className="">
         <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
           <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16" >
             <div className="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
