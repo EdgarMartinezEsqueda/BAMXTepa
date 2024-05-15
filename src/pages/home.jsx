@@ -13,9 +13,9 @@ function LandingPage() {
   return (
       <>
         <Navbar />
-      <Banner />
-      <AboutUs />
-      <MapJalisco/>
+        <Banner />
+        <AboutUs />
+        <MapJalisco/>
         <SectionWithLinks />
         <SectionWithImageRight />
         <SectionWithImageLeft />
