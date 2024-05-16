@@ -20,7 +20,7 @@ const Header = () => {
             <a href="/nosotros" className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-rojoLogo opacity-100" >
               Nosotros
             </a>
-            <a href="/noticias" className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-rojoLogo opacity-100" >
+            <a href="/donate" className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-rojoLogo opacity-100" >
               Donación
             </a>
             <a href="/productos" className="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-rojoLogo opacity-100" >

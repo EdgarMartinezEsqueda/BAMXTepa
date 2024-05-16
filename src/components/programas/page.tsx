@@ -1,9 +1,11 @@
 
+import Nav from '../Nav'
 
 export default function Home() {
   return (
     <main>
-      <h1>Contacto</h1>
+      <Nav/>
+      <h1>Programas</h1>
     </main>
   )
 }
