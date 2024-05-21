@@ -1,8 +1,13 @@
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
+import CheckoutForm from "./CheckoutForm";
+// Make sure to call `loadStripe` outside of a component’s render to avoid
+// recreating the `Stripe` object on every render.
+const stripePromise = loadStripe('pk_test_51PGp4xKvAMzTCayQDgPVOo906NqJMpzkk5W2O4sjqeIrFgA49TKkxLoCVWLLNjqqObKVlKhAIBCnv7d0lnMcidSV006H1i8dKI');
 
 export default function Home() {
   return ( 
     <>
-      <main>
         <section>
           <div className='w-1/2 mx-auto flex flex-wrap'>
             <h2 className='w-full'>Donativos economicos</h2>  
@@ -28,9 +33,9 @@ export default function Home() {
           <textarea required className='w-1/2 border-double border-4' name="message" id="message" ></textarea>
           <button className='w-1/5 border-solid border-2 rounded-lg' type="submit">Enviar mensaje</button>
         </form>
-        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
-        <iframe src="https://donorbox.org/embed/alimentando-sonrisas-dona-comparte-y-transforma?language=en" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" allow="payment"></iframe>
-      </main>
+         {/* <Elements stripe={stripePromise}  >
+          <CheckoutForm/>  
+         </Elements> */}
     </>
   )
 }
