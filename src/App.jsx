@@ -5,13 +5,15 @@ import FAQs from "./pages/faqs";
 import ErrorPage  from './pages/404';
 import Contact from "./pages/contact";
 import Donate from "./pages/donate";
+import AboutUs from "./pages/aboutUs";
 
 function App() {
   const routes = [
     { path: '/', element: <HomePage /> },
     { path: "/faqs", element: < FAQs /> },
     { path: "/contacto", element: <Contact /> },
-    { path: "/donate", element: <Donate /> },
+    { path: "/donar", element: <Donate /> },
+    { path: "/nosotros", element: <AboutUs /> },
     { path: "*", element: <ErrorPage /> },
   ];
 

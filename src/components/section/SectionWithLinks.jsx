@@ -17,47 +17,47 @@ const SectionWithLinks = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 text-center">
-              <a className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
+              <div className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
                 <span className="inline-block rounded-full bg-gray-50 p-3 text-rojoLogo">
                   <HandshakeIcon/>
                 </span>
                 <h2 className="mt-2 font-bold">Apoyo al prójimo</h2>
-              </a>
+              </div>
 
-              <a className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
+              <div className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
                 <span className="inline-block rounded-full bg-gray-50 p-3 text-rojoLogo">
                   < FavoriteIcon />
                 </span>
                 <h2 className="mt-2 font-bold">Gratitud</h2>
-              </a>
+              </div>
 
-              <a className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
+              <div className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
                 <span className="inline-block rounded-full bg-gray-50 p-3 text-rojoLogo">
                   < TaskAltIcon />
                 </span>
                 <h2 className="mt-2 font-bold"> Honestidad</h2>
-              </a>
+              </div>
 
-              <a className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
+              <div className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
                 <span className="inline-block rounded-full bg-gray-50 p-3 text-rojoLogo">
                   < Diversity2Icon />
                 </span>
                 <h2 className="mt-2 font-bold"> Solidaridad</h2>
-              </a>
+              </div>
 
-              <a className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
+              <div className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
                 <span className="inline-block rounded-full bg-gray-50 p-3 text-rojoLogo">
                   <BackHandIcon/>
                 </span>
                 <h2 className="mt-2 font-bold"> Voluntad </h2>
-              </a>
+              </div>
 
-              <a className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
+              <div className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="/" >
                 <span className="inline-block rounded-full bg-gray-50 p-3 text-rojoLogo">
                   <VolunteerActivismIcon />
                 </span>
                 <h2 className="mt-2 font-bold">Compromiso</h2>
-              </a>
+              </div>
             </div>
           </div>
         </div>
