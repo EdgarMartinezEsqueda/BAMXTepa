@@ -2,6 +2,7 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import Carousel from "../components/carousel/Carousel";
 import SocialImpact from "../components/section/SocialImpact";
+import HowToHelp from "../components/section/HowToHelp";
 
 // Componente para la sección de Historia
 const Historia = () => (
@@ -57,7 +58,7 @@ const AboutUsPage = () =>{
         <Historia />
         <Equipo />
         <SocialImpact />
-        <ComoAyudar />
+        <HowToHelp />
         <Footer/>
       </>
     );
