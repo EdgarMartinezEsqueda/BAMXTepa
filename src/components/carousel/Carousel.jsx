@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import LoadingImage from "../../assets/loading.png"
 
 const data = [
     { 
@@ -77,21 +78,10 @@ const Carousel = () => {
               if (currentIndex === index) {
                 return (
                   <div key={index}>
-                    {loading && (
-                      <div className="spinner">
-                        <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24"></svg>
-                        Espere...
-                      </div>
-                    )}
                     <img
-                      src={img}
+                      src={ loading ? LoadingImage : img}
                       alt="Multiple images for slide and show"
-                      className="object-cover w-full temporary-bounce relative lg:max-h-[600px] sm:max-h-[400px]"
-                      style={{
-                        display: loading ? 'none' : 'block',
-                        width: '100%',
-                        animation: 'fadeIn 0.5s',
-                      }}
+                      className="object-cover w-full temporary-bounce relative lg:h-[600px] sm:h-[400px]"
                       onLoad={() => setLoading(false)}
                     />
                   </div>
