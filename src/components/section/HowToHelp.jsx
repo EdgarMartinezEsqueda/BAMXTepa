@@ -1,13 +1,3 @@
-
-const data = [
-];
-
-const HowToHelpCard = (title, info, icon, index) =>{
-    return (
-        <>
-        </>
-    )
-}
 const HowToHelp = () => {
     return (
     <section className="p-16">
@@ -19,9 +9,9 @@ const HowToHelp = () => {
           </div>
           <div>
             <ul className="py-3">
-              <li className="py-2"><strong className="text-rojoLogo font-black">Dinero:</strong> Nos permite comprar alimentos y cubrir costos operativos.<a href="https://www.paypal.com/donate/?hosted_button_id=WMZEPNJ7BFVV2" className="text-verdeLogo"> Puedes donar en línea</a> o en comunícate a nuestra oficina.</li>
+              <li className="py-2"><strong className="text-rojoLogo font-black">Dinero:</strong> Nos permite comprar alimentos y cubrir costos operativos.<a href="https://www.paypal.com/donate/?hosted_button_id=WMZEPNJ7BFVV2" target="_blank" className="text-verdeLogo"> Puedes donar en línea</a> o en comunícate a nuestra oficina.</li>
               <li className="py-2"><strong className="text-rojoLogo font-black">Producto:</strong> Aceptamos alimentos no perecederos y frescos en nuestras instalaciones o en campañas de recolección.</li>
-              <li className="py-2"><strong className="text-rojoLogo font-black">Voluntariado:</strong> Únete a nuestro equipo para clasificar alimentos, distribuir, y organizar eventos. <a href="/contacto" className="text-verdeLogo">Contáctanos</a>.</li>
+              <li className="py-2"><strong className="text-rojoLogo font-black">Voluntariado:</strong> Únete a nuestro equipo para clasificar alimentos, distribuir, y organizar eventos. <a href="/contacto" target="_blank" className="text-verdeLogo">Contáctanos</a>.</li>
               <li className="py-2"><strong className="text-rojoLogo font-black">Servicio:</strong> Si tienes habilidades o una empresa que puede ayudar (transporte, marketing, servicios legales), ofrécenos tu apoyo.</li>
             </ul>
           </div>
