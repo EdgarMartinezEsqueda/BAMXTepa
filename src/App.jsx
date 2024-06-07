@@ -6,6 +6,7 @@ import ErrorPage  from './pages/404';
 import Contact from "./pages/contact";
 import Donate from "./pages/donate";
 import AboutUs from "./pages/aboutUs";
+import Programs from "./pages/programs";	
 
 function App() {
   const routes = [
@@ -14,6 +15,7 @@ function App() {
     { path: "/contacto", element: <Contact /> },
     { path: "/donar", element: <Donate /> },
     { path: "/nosotros", element: <AboutUs /> },
+    { path: "/programas", element: <Programs /> },
     { path: "*", element: <ErrorPage /> },
   ];
 
