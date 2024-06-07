@@ -7,7 +7,7 @@ import SectionWithImageRight from "../components/section/SectionWithImageRight";
 import SectionWithImageLeft from "../components/section/SectionWithImageLeft";
 import Blog from "../components/blog/Blog";
 import AboutUs from "../components/section/AboutUs";
-import MapJalisco from "../components/map/map";
+import MapJalisco from "../components/map/Map";
 
 function LandingPage() {
   return (
