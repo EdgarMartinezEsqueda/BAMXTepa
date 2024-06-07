@@ -58,17 +58,17 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/contacto" >
+                      <a className="text-gris transition hover:text-gris/75" href="/donar" >
                         Donación
                       </a>
                     </li>
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/contacto" >
+                      <a className="text-gris transition hover:text-gris/75" href="/programas" >
                         Programas
                       </a>
                     </li>
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/contacto" >
+                      <a className="text-gris transition hover:text-gris/75" href="/voluntario" >
                         Voluntariado
                       </a>
                     </li>
@@ -87,7 +87,7 @@ const Footer = () => {
                   <li>
                     <a className="flex items-center justify-center gap-1.5 sm:justify-start text-rojoLogo" href="mailto:direccion@batepa.mx" >
                       < MailOutlineIcon/>
-                      <span className="text-gris">direccion@batepa.mx</span>
+                      <span className="text-gris">direcciongeneral@batepa.mx</span>
                     </a>
                   </li>
       
