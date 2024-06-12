@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => { 
   return (
-    <header aria-label="Site Header" className="border-b border-gray-100  ">
+    <header aria-label="Site Header" className="border-b sticky top-0 py-2 ">
       <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8" >
         <div className="flex items-center gap-4">
           <a href="/" className="flex">

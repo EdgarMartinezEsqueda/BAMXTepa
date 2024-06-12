@@ -52,74 +52,70 @@ const Arrow = ({ arrowStyle }) => {
 
 
 const Carousel = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [loading, setLoading] = useState(true);
-  
-    const decreseIndex = () => {
-      setCurrentIndex(prevIndex => prevIndex <= 0 ? images.length - 1 : prevIndex - 1);
-    };
-  
-    const increseIndex = () => {
-      setCurrentIndex(prevIndex => prevIndex === images.length - 1 ? 0 : prevIndex + 1);
-    };
-  
-    useEffect(() => {
-      setLoading(true);
-    }, [currentIndex]);
-  
-    return (
-      <div className="w-3/4 flex justify-center items-center">
-        <div className="w-full relative">
-          <div className="absolute inset-y-0 top-1/2 left-3 w-5 flex" onClick={decreseIndex}>
-            <Arrow />
-          </div>
-          <div>
-            {images.map((img, index) => {
-              if (currentIndex === index) {
-                return (
-                  <div key={index}>
-                    <img
-                      src={ loading ? LoadingImage : img}
-                      alt="Multiple images for slide and show"
-                      className="object-cover w-full temporary-bounce relative lg:h-[600px] sm:h-[400px]"
-                      onLoad={() => setLoading(false)}
-                    />
-                  </div>
-                );
-              } else return null;
-            })}
-          </div>
-          <div className="absolute inset-y-0 right-2 w-5 flex top-1/2" onClick={increseIndex}>
-            <Arrow arrowStyle="rotate-180" />
-          </div>
-          {/* text portion */}
-          <div className="absolute bottom-6 inset-x-0">
-            {data.map((textdata, index) => {
-              if (currentIndex === index) {
-                return (
-                  <div key={index} className="text-white flex justify-center flex-col text-center bg-verdeLogo/[0.7]">
-                    <h2 className="text-3xl">{textdata.title}</h2>
-                    <span className="text-xl">
-                      <p>{textdata.description}</p>
-                    </span>
-                  </div>
-                );
-              } else return null;
-            })}
-          </div>
-          {/* custom dot portion */}
-          <div className="absolute bottom-2 inset-x-0 flex flex-row gap-2 justify-center">
-            {images.map((_, index) => (
-              <div
-                key={index}
-                className={`w-2 h-2 ${currentIndex === index ? 'bg-gray-400' : 'bg-gray-600'} rounded-[50%] cursor-pointer`}
-                onClick={() => setCurrentIndex(index)}
-              ></div>
-            ))}
-          </div>
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  const decreseIndex = () => {
+    setCurrentIndex(prevIndex => prevIndex <= 0 ? images.length - 1 : prevIndex - 1);
+  };
+
+  const increseIndex = () => {
+    setCurrentIndex(prevIndex => prevIndex === images.length - 1 ? 0 : prevIndex + 1);
+  };
+
+  useEffect(() => {
+    setLoading(true);
+  }, [currentIndex]);
+
+  return (
+    <div className="w-3/4 flex justify-center items-center overflow-hidden">
+      <div className="w-full relative">
+        <div className="absolute inset-y-0 top-1/2 left-3 w-5 flex" onClick={decreseIndex}>
+          <Arrow />
+        </div>
+        <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {images.map((img, index) => (
+            <div key={index} className="w-full flex-shrink-0">
+              <img
+                src={loading ? LoadingImage : img}
+                alt="Multiple images for slide and show"
+                className="object-cover w-full lg:h-[600px] sm:h-[400px]"
+                onLoad={() => setLoading(false)}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="absolute inset-y-0 right-2 w-5 flex top-1/2" onClick={increseIndex}>
+          <Arrow arrowStyle="rotate-180" />
+        </div>
+        {/* text portion */}
+        <div className="absolute bottom-6 inset-x-0">
+          {data.map((textdata, index) => {
+            if (currentIndex === index) {
+              return (
+                <div key={index} className="text-white flex justify-center flex-col text-center bg-verdeLogo/[0.7]">
+                  <h2 className="text-3xl">{textdata.title}</h2>
+                  <span className="text-xl">
+                    <p>{textdata.description}</p>
+                  </span>
+                </div>
+              );
+            } else return null;
+          })}
+        </div>
+        {/* custom dot portion */}
+        <div className="absolute bottom-2 inset-x-0 flex flex-row gap-2 justify-center">
+          {images.map((_, index) => (
+            <div
+              key={index}
+              className={`w-2 h-2 ${currentIndex === index ? 'bg-gray-400' : 'bg-gray-600'} rounded-[50%] cursor-pointer`}
+              onClick={() => setCurrentIndex(index)}
+            ></div>
+          ))}
         </div>
       </div>
-    );
-  };
-  
-  export default Carousel;
+    </div>
+  );
+};
+
+export default Carousel;
