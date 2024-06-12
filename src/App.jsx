@@ -7,6 +7,7 @@ import Contact from "./pages/contact";
 import Donate from "./pages/donate";
 import AboutUs from "./pages/aboutUs";
 import Programs from "./pages/programs";	
+import Voluntariado from "./pages/voluntarios";
 
 function App() {
   const routes = [
@@ -16,6 +17,7 @@ function App() {
     { path: "/donar", element: <Donate /> },
     { path: "/nosotros", element: <AboutUs /> },
     { path: "/programas", element: <Programs /> },
+    { path: "/voluntario", element: <Voluntariado /> },
     { path: "*", element: <ErrorPage /> },
   ];
 
