@@ -15,7 +15,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className=" max-lg:flex max-lg:flex-col justify-center items-center">
               <div className="flex justify-center text-teal-600 ">
-                <img src={ logoBN } alt="Banco Diocesano de los Altos" className="h-24"/>
+                <a href="/">
+                  <img src={ logoBN } alt="Banco Diocesano de los Altos" className="h-24"/>
+                </a>
               </div>
               <p className="mt-6 max-w-md text-center leading-relaxed text-gris sm:max-w max-lg:w-screen max-lg:flex lg:text-left max-lg:p-2" >
               Unidos por la solidaridad, alimentando esperanzas. ¡Gracias por apoyar nuestra misión de combatir el hambre en nuestra comunidad!
@@ -92,17 +94,17 @@ const Footer = () => {
                   </li>
       
                   <li>
-                    <a className="flex items-center justify-center gap-1.5 sm:justify-start text-rojoLogo" href="/" >
+                    <a className="flex items-center justify-center gap-1.5 sm:justify-start text-rojoLogo"  >
                       < PhoneIcon />
                       <span className="text-gris">378 782 5552</span>
                     </a>
                   </li>
       
-                  <li className="flex items-start justify-center gap-1.5 sm:justify-start text-rojoLogo" >
-                    < PlaceIcon />
-                    <address className="-mt-0.5 not-italic text-gris">
-                      Terrerito #1326, Tepatitlán de Morelos, Jalisco
-                    </address>
+                  <li>
+                    <a  href="https://maps.app.goo.gl/bBGdrrAYg48dcdtE8" target="_blank" className="flex items-start justify-center gap-1.5 sm:justify-start text-rojoLogo">
+                      < PlaceIcon />
+                      <span className="text-gris">Terrerito #1326, Tepatitlán de Morelos, Jalisco</span>
+                    </a>
                   </li>
                 </ul>
               </div>
