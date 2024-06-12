@@ -3,7 +3,7 @@ export default function Donate() {
   return (
     <div className="w-full max-w-5xl mx-auto py-12 md:py-24 lg:py-32 text-2xl">
       <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-        <div className="space-y-4">
+        <div className="space-y-4 flex flex-col justify-center">
           <h1 className="text-5xl font-bold tracking-tighter md:text-4xl/tight text-verdeLogo">¡Ayúdanos a hacer la diferencia!</h1>
           <p className="text-gray-500 md:text-2xl/relaxed dark:text-gray-400">
             En el Banco Diocesano de Alimentos de los Altos distribuímos ayudamos a más de 4,700 familias de la zona de Los Altos de Jalisco y Nochistlán (en el estado de Zacatecas).
@@ -17,7 +17,7 @@ export default function Donate() {
                 <button
                 variant="ghost"
                 size="icon"
-                onClick={() => navigator.clipboard.writeText(import.meta.env.VITE_cuenta)}
+                onClick={() => navigator.clipboard.writeText(import.meta.env.VITE_clabe)}
                 className="hover:text-verdeLogo"
               >
                 <ContentCopyIcon className="h-5 w-5" />
