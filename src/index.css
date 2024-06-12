@@ -46,19 +46,8 @@ h1, li, p, label, button{
     color: var(--gray);
 }
 
-h2 {
-    color: var(--green);
-}
-
-h3 {
-    color: var(--red);
-}
-
-h4 {
-    color: var(--yellow);
-}
-
 h1, h2, h3, h4{
+    color: #0db14c;
     font-weight: bolder;
 }
 
