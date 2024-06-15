@@ -1,11 +1,11 @@
 import Imagen from "assets/image4.jpg";
 const SectionWithImage = () => {
     return (
-      <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center max-h-[400px] bg-bgClaro" >
-        <img alt="Banco de Alimentos" src={Imagen} className=" w-full object-cover object-bottom sm:self-end sm:rounded-tr-[30px] h-96 md:rounded-tr-[60px]" />
+      <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center md:max-h-[400px] bg-bgClaro" >
+        <img alt="Banco de Alimentos" src={Imagen} className="max-md:hidden w-full object-cover object-bottom sm:self-end sm:rounded-tr-[30px] h-96 md:rounded-tr-[60px]" />
         <div className=" p-4">
           <div className="mx-auto max-w-2xl text-center sm:text-left">
-            <h2 className="text-2xl font-bold md:text-3xl">
+            <h2 className="text-4xl font-bold ">
               Visión
             </h2>
             <div className=" text-gray-500 md:text-xl">
@@ -13,6 +13,7 @@ const SectionWithImage = () => {
             </div>
           </div>
         </div>
+        <img alt="Banco de Alimentos" src={Imagen} className="md:hidden w-full object-cover object-bottom self-end h-96 rounded-tr-[60px]" />
       </section>
     );
 };

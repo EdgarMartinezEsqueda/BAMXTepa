@@ -9,9 +9,7 @@ import OurTeam from "../components/section/OurTeam";
 const Historia = () => (
     <section className="text-xl ">
       <h1 className="text-5xl text-grisLogo  text-center p-8">Nuestra Historia</h1>
-      <div className="flex justify-center h-[600px]">
-        <Carousel />
-      </div>
+      <Carousel />
     </section>
   );
   

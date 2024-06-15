@@ -11,7 +11,7 @@ const SectionWithLinks = () => {
           <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16" >
             <div className="mx-auto max-w-lg text-center lg:mx-0 lg:text-left">
               <h2 className="text-4xl font-bold">Nuestro valores</h2>
-              <p className="mt-4 text-gray-600 text-xl">
+              <p className="max-md:hidden mt-4 text-gray-600 text-xl">
                 Nuestros valores son nuestra guía y nuestra inspiración. Nos comprometemos a actuar con integridad, empatía y respeto, buscando siempre el bienestar de las comunidades a las que servimos. Son la base de nuestra identidad y de cómo impactamos en el mundo. 
               </p>
             </div>

@@ -8,7 +8,7 @@ import IconTortilla from "assets/icons/tortilla.png";
 const data = [
     {
         title: "Paquetes alimentarios",
-        info: "58,838",
+        info: "58,838 paquetes",
         icon: IconDespensa
     },
     {
@@ -40,20 +40,20 @@ const data = [
 
 const SocialImpactCard = (title, info, icon, index) =>{
     return (
-        <div className="block rounded-xl p-4 focus:outline-none focus:ring text-3xl " key={index}>
-            <h2 className="mt-2 p-2 text-rojoLogo">{title}</h2>
-            <div className="bg-verdeLogo/5 rounded-full w-32 h-32 flex justify-center items-center m-auto hover:bg-verdeLogo   ">
+        <div className="block rounded-xl p-4 focus:outline-none focus:ring text-3xl max-lg:text-2xl " key={index}>
+            <h2 className="p-2 text-rojoLogo h-1/3">{title}</h2>
+            <div className=" rounded-full flex justify-center items-center m-auto h-1/3 w-32 ">
                 <img src={icon} alt="paquete alimentario" className="w-28 h-28"/>
             </div>
-            <h2 className="mt-2 font-bold p-2 text-amarilloLogo">{info}</h2>
+            <h2 className="font-bold p-2 text-amarilloLogo h-1/3">{info}</h2>
         </div>
     )
 }
 const SocialImpact = () => {
     return (
-    <section className="w-2/3 m-auto py-6">
-        <h1 className="text-5xl text-center text-verdeLogo">Impacto social 2023</h1>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 text-center">
+    <section className="sm:w-2/3 m-auto py-6">
+        <h1 className="text-4xl text-center text-verdeLogo">Impacto social 2023</h1>
+        <div className="grid grid-cols-2 sm:gap-4 md:grid-cols-3 text-center">
             { data.map((item, index) => (
                 SocialImpactCard(item.title, item.info, item.icon, index)
             )) }

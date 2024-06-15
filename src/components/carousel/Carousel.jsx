@@ -53,14 +53,14 @@ const Arrow = ({ arrowStyle }) => {
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
-  const decreseIndex = () => {
-    setCurrentIndex(prevIndex => prevIndex <= 0 ? images.length - 1 : prevIndex - 1);
+  const increaseIndex = () => {
+    setCurrentIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
-  const increseIndex = () => {
-    setCurrentIndex(prevIndex => prevIndex === images.length - 1 ? 0 : prevIndex + 1);
+  const decreaseIndex = () => {
+    setCurrentIndex(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
 
   useEffect(() => {
@@ -68,33 +68,33 @@ const Carousel = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-3/4 flex justify-center items-center overflow-hidden">
+    <div className="w-full flex max-lg:justify-center items-center overflow-hidden">
       <div className="w-full relative">
-        <div className="absolute inset-y-0 top-1/2 left-3 w-5 flex" onClick={decreseIndex}>
+        <div className="absolute inset-y-0 top-1/3 lg:top-1/2 left-3 w-5 flex cursor-pointer" onClick={decreaseIndex}>
           <Arrow />
         </div>
         <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((img, index) => (
-            <div key={index} className="w-full flex-shrink-0">
+            <div key={index} className=" w-full flex-shrink-0 ">
               <img
                 src={loading ? LoadingImage : img}
                 alt="Multiple images for slide and show"
-                className="object-cover w-full lg:h-[600px] sm:h-[400px]"
+                className="object-cover w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] max-lg:-top-1/2"
                 onLoad={() => setLoading(false)}
               />
             </div>
           ))}
         </div>
-        <div className="absolute inset-y-0 right-2 w-5 flex top-1/2" onClick={increseIndex}>
+        <div className="absolute inset-y-0 right-3 w-5 flex cursor-pointer top-1/3 lg:top-1/2" onClick={increaseIndex}>
           <Arrow arrowStyle="rotate-180" />
         </div>
         {/* text portion */}
-        <div className="absolute bottom-6 inset-x-0">
+        <div className="lg:absolute bottom-6 inset-x-0">
           {data.map((textdata, index) => {
             if (currentIndex === index) {
               return (
-                <div key={index} className="text-white flex justify-center flex-col text-center bg-verdeLogo/[0.7]">
-                  <h2 className="text-3xl">{textdata.title}</h2>
+                <div key={index} className="text-white flex justify-center flex-col text-center bg-verdeLogo lg:bg-verdeLogo/[0.7] p-4">
+                  <h2 className="text-4xl text-white">{textdata.title}</h2>
                   <span className="text-xl">
                     <p>{textdata.description}</p>
                   </span>
@@ -108,7 +108,7 @@ const Carousel = () => {
           {images.map((_, index) => (
             <div
               key={index}
-              className={`w-2 h-2 ${currentIndex === index ? 'bg-gray-400' : 'bg-gray-600'} rounded-[50%] cursor-pointer`}
+              className={`w-2 h-2 ${currentIndex === index ? 'bg-gray-400' : 'bg-gray-600'} rounded-full cursor-pointer`}
               onClick={() => setCurrentIndex(index)}
             ></div>
           ))}

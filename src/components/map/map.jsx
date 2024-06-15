@@ -18,21 +18,15 @@ const options = {
             '<td style="text-align: right"><b>{point.name}</b></td></tr>',
         footerFormat: '</table>'
     },
-    // mapNavigation: {
-    //     enabled: true,
-    //     buttonOptions: {
-    //         verticalAlign: 'bottom'
-    //     }
-    // },
 };
 export default function Mapa(){
     return (
-        <div className="flex">
-            <div className="m-32 w-2/3">
-                <h2 className="text-bold text-4xl">Municipios a los que llegamos</h2>
-                <p className=" text-xl my-8">En nuestro compromiso por combatir el hambre, llegamos a diversas comunidades en las que cada gesto de solidaridad marca la diferencia. Desde pequeños poblados hasta barrios urbanos, nuestro banco de alimentos trabaja incansablemente para llevar esperanza y nutrición a quienes más lo necesitan. Conoce más sobre las comunidades a las que llegamos y únete a nuestra causa.</p>
+        <div className="md:flex md:items-center">
+            <div className="p-8 lg:p-32 md:w-2/3">
+                <h2 className="text-bold text-4xl max-md:text-center max-md:w-full">Municipios a los que llegamos</h2>
+                <p className=" max-md:hidden text-xl my-8">En nuestro compromiso por combatir el hambre, llegamos a diversas comunidades en las que cada gesto de solidaridad marca la diferencia. Desde pequeños poblados hasta barrios urbanos, nuestro banco de alimentos trabaja incansablemente para llevar esperanza y nutrición a quienes más lo necesitan. Conoce más sobre las comunidades a las que llegamos y únete a nuestra causa.</p>
             </div>
-            <div className="w-1/3">
+            <div className="w-full max-md:w-11/12 max-md:mx-auto lg:w-1/3">
             <HighchartsReact 
                 highcharts={Highcharts}
                 constructorType = {'mapChart'}
