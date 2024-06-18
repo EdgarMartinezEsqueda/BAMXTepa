@@ -3,19 +3,18 @@
 export default function Home() {
   return (
 <section>
-  <div className="relative w-full h-96"><img className="absolute h-full w-full object-cover object-center" src="https://lh3.googleusercontent.com/fife/ALs6j_HH1KNzTzCMuEwxXYOcF8usNQscFDC2vipHX7Y3CA-Wj8kMRIV1uiXofSSbHPtgtd29d4CzdfR7cHHr4jzBfU4bqZRuof-UTOjML0ji_l5LVB8kKantdIYiIy9cwQ4EtmYC6NSfYUqMkIT0MBglM3ajOi_PZRCNF0DuLM2krfbyDmJZQKV8xEsGkObfn4Km5NSOsyCP2Je33qhmYfurHs7Zl1OiqwkUDSW7LnkpJ2hLQqtRMG2Xdi0sSW7twU9n100TopovVkQ2UQrtfI17p8HxBWw4k3AtY8Pi2BX2SLZcywjlxtLsg3e4_vjusJ-UayQNq2EJQOsToeGjwrLL-ZPpIJVCuNjI_6BcckLQQMtv2FuZNJyhXQbTT0RGg5f_HsVTNovpGH3XkGA6ov6sdjSkL1pSTa6quAZRrFxtLLlZQjBAJ2K24h4Js-uq6AqMl6EzRMm2O7H8hdAi7nxJ0aLjhAvu_IT42bxHeQPuCl79AGO2q5Eiw4f3UKdbE2phLn6vGSedb6hQekXjFkcMlECTMvVdOLXrGghPEQmCe9eVz8gRDeIlfkhZEJBcoJFQaATlySblbwVZzzwgTJcKZmuk67eaEHGkT_JGaqqLmPnPRCNjqEY3_UG9QErRnhihF9sVkCx4wDUK6ebPhMb2WbgjpVFlo4AQSaaaBTlD0_w9x5J-dwpdFNXhh11hOZvxt3MmyoVh9dWvd9lNQAgBlSbPQSuUYtYInE3FPQoB9aOCAIdKrhnFcnQXk8y1kIps9IWYeq-E49TDLvPqn3TcMDpeVay12UNj27SFhBHPam0BvarUMUo_OwuEJ__jO6m8KOer9LPEjG9QM0vA2lJAp3b846hDOXshsJTmDqOXNykzv-fcBrbGndRsTnygvK8W022jwABKYY4AWjROC8xSCHnu2nc01Ev-BsFoIMdjDvBEoQ7bldIyTgLawSzcarw0-af3uWULIMljRj4e_mtefObvkwj9VvlkEZdHLyVc6e_FPBoum1C6_qZ0vT89nfGYyrp3X_ntph_88HQznRTjvaliV8e10SjtdEu1tPbCSSD2FFhPPsN2V4bLnsSjo6eFCQRSNhJZkeBRVAAi7BzQItbISkzO-XcgBENcxJrnP6Af435Z0_YlhT90PHPXoHdyXU3n2eVm_oIYtFXjkI8Wx4LqxJPwjC5_BWnBfuaMx-sSTaB18zvbRv6Xt5K1PD95oiuHemcPU41r-MzK2AVHtb1-tvTy6NYMYCa1A2EEmGRa4bjku8PE2I_AlI4kMdS5tDC-wzdYcbzEf31Udu4kSfTPGX47kWA8KLLsJ11ngbcCxuzkGe_DAG1ux37TiXzj7ujopLoR3OkLplE3zAxXl2PsfC8dG5r5GUHZSk2-E4ipn-P78CgYL2Gsn-dH-XaZGd727asZJZgCTYogdahMDz_Igy3bPZu8NrJ9KtL-RS25MLH92V33YvYQokhF_PwPGws_1hyuyKd5GUs_c1BDxmAk0-U4KFZ6rs6QzuzSMYWEmnCYiV945OHBIj2e3l0BznebCq3dl5iLgHzAsCODLQMKyvagc-Hdm34m1bI1QUlNuKGEkiCdLGj2jeIbH6snfDpfeBOFTgU8OXAjZyzK3TZPbO9aq4mMDtBDNFsZL-MbeL2OS5j_tmQsmfDRQi75cv21xVk552tS_iUDqEge_LJ2UA=w2000-h1234" alt="nature image" />
+  <div className="relative w-full h-96"><img className="absolute h-full w-full object-cover object-center" src="https://scontent.fgdl14-1.fna.fbcdn.net/v/t39.30808-6/277574920_1886141125118487_6405027824439256273_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dY1n_NUplxoQ7kNvgEtSaSd&_nc_ht=scontent.fgdl14-1.fna&oh=00_AYAcO45QFnlRR9c_J7-DCa4qnHjNoEj-cFYX3DVF-b1Rgw&oe=66779A5D" alt="nature image" />
     <div className="absolute inset-0 h-full w-full bg-black/50"></div>
     <div className="relative pt-28 text-center">
       <h2 className="block antialiased tracking-normal font-semibold leading-[1.3] text-white mb-4 text-3xl lg:text-4xl">Información de contacto</h2>
-      <p className="block antialiased text-2xl leading-relaxed text-white mb-9 opacity-70">Para cualquier consulta o información adicional, no dudes en contactarnos. Estamos aquí para ayudarte y contribuir juntos a nuestra comunidad.
-
+      <p className="block antialiased text-2xl leading-relaxed text-white mb-9 opacity-90 px-8">Para cualquier consulta o información adicional, no dudes en contactarnos.
 </p>
     </div>
   </div>
   <div className="-mt-16 mb-8 px-8 ">
     <div className="container mx-auto">
       <div className="py-12 flex justify-center rounded-xl border border-white bg-white shadow-md shadow-black/5 saturate-200">
-        <div className="my-8 grid gap-6 px-4 w-1/3">
+        <div className="my-8 grid gap-6 px-4 w-1/3 max-lg:hidden">
           <div className="flex items-center gap-4 w-5/6">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fdb913" aria-hidden="true" className="!h-6 !w-6">
               <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"></path>
@@ -39,7 +38,7 @@ export default function Home() {
             <p className="block antialiased text-base leading-relaxed text-inherit font-bold">direcciongeneral@batepa.mx</p>
           </div>
         </div>
-        <div className="py-4 w-1/2">
+        <div className="py-4 w-3/4 lg:w-1/2">
           <form action="#" className="space-y-8">
               <div>
                   <label htmlFor="email" className="block mb-2 text-2xl text-gray-900 dark:text-gray-300">Tu correo</label>
@@ -53,7 +52,7 @@ export default function Home() {
                   <label htmlFor="message" className="block mb-2 text-2xl text-gray-900 dark:text-gray-400">Tu mensaje</label>
                   <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Deja tu comentario..."></textarea>
               </div>
-              <button type="submit" className="py-3 px-5 text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-verdeLogo">Enviar</button>
+              <button type="submit" className="py-3 px-5 text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-verdeLogo max-md:w-full">Enviar</button>
           </form>
         </div>
       </div>
