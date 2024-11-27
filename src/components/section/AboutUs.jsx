@@ -8,7 +8,10 @@ const AboutUs = () => {
               Acerca de nosotros
             </h2>
             <p className="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed text-center" >
-            Somos una asociación civil dedicada a rescatar alimentos para fortalecer la alimentación de comunidades en la región de los Altos de Jalisco. Nuestro compromiso es reducir el desperdicio de alimentos y combatir el hambre, trabajando en conjunto con empresas, instituciones y la comunidad para crear un impacto positivo y sostenible en nuestra sociedad
+            Somos una asociación civil dedicada a rescatar alimentos para fortalecer la alimentación de comunidades en la región de los Altos de Jalisco.
+            </p>
+            <p className="hidden max-w-lg text-white/90 md:block md:text-lg md:leading-relaxed text-center" >
+            Nuestro compromiso es reducir el desperdicio de alimentos y combatir el hambre, trabajando en conjunto con empresas, instituciones y la comunidad para crear un impacto positivo y sostenible en nuestra sociedad
             </p>
           </div>
         </div>
