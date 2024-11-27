@@ -1,4 +1,5 @@
 import Logo from "assets/logo/logo.png";
+import LogoBN from "assets/logo/logoModoOscuro.png";
 import { useState } from "react";
 
 import MenuIcon from '@mui/icons-material/Menu';
@@ -7,7 +8,7 @@ import CloseIcon from '@mui/icons-material/Close';
 const Header = () => { 
   const [toggle, setToggle] = useState(true); 
   return (
-    <header id="site-header" aria-label="Site Header" className="sticky top-0 py-2 z-10 bg-gray-100 ">
+    <header id="site-header" aria-label="Site Header" className="sticky top-0 py-2 z-10 bg-gray-100 dark:bg-navbarOscuro">
       <div className="mx-auto flex h-16 max-lg:text-3xl max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8" >
         <div className="flex items-center gap-4">
           <a href="/" className="flex">
