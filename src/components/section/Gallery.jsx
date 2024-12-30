@@ -1,5 +1,5 @@
 // const images = Object.keys( import.meta.glob("../../assets/gallery/*") ).map( url => new URL(url, import.meta.url).href ); // get all images from the gallery folder
-const images = [...Array(6).keys()].map( n => new URL(`../../assets/gallery/image_${n+1}.webp`, import.meta.url).href ); // get only 6 images from the gallery folder
+const images = [...Array(6).keys()].map( n => new URL(`../../assets/gallery/Image_${n+1}.webp`, import.meta.url).href ); // get only 6 images from the gallery folder
 
 const Gallery = () => {
     return (
