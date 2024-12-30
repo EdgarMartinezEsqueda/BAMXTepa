@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import LoadingImage from "../../assets/loading.png"
+import LoadingImage from "../../assets/loading.webp"
 
 const data = [
     { 
@@ -27,7 +27,7 @@ const data = [
         "title": "2022", 
         "description": "Obtenemos la certificación ISO 22000-2018, demostrando nuestro compromiso con la seguridad y calidad alimentaria."},
 ]
-const images = [...Array( data.length ).keys()].map( n => new URL(`../../assets/carousel/${n}.jpg`, import.meta.url).href ); // get only 6 images from the gallery folder
+const images = [...Array( data.length ).keys()].map( n => new URL(`../../assets/carousel/${n}.webp`, import.meta.url).href ); // get only 6 images from the gallery folder
 
 const Arrow = ({ arrowStyle }) => {
   return (

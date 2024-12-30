@@ -1,4 +1,4 @@
-import Imagen from "assets/image4.jpg";
+import Imagen from "assets/image4.webp";
 const SectionWithImage = () => {
     return (
       <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center md:max-h-[400px] bg-bgClaro" >
