@@ -1,10 +1,10 @@
 import Navbar from "../components/navbar/Navbar";
 import Banner from "../components/banner/Banner";
 import Footer from "../components/footer/Footer";
-import SectionWithLinks from "../components/section/SectionWithLinks";
+import Valores from "../components/section/Valores";
 import Gallery from "../components/section/Gallery";
-import SectionWithImageRight from "../components/section/SectionWithImageRight";
-import SectionWithImageLeft from "../components/section/SectionWithImageLeft";
+import Mision from "../components/section/Mision";
+import Vision from "../components/section/Vision";
 import Blog from "../components/blog/Blog";
 import AboutUs from "../components/section/AboutUs";
 import MapJalisco from "../components/map/Map";
@@ -16,9 +16,9 @@ function LandingPage() {
         <Banner />
         <AboutUs />
         <MapJalisco/>
-        <SectionWithLinks />
-        <SectionWithImageRight />
-        <SectionWithImageLeft />
+        <Valores />
+        <Mision />
+        <Vision />
         <Gallery />
         <Blog /> 
         <Footer />

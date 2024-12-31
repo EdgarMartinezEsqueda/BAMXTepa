@@ -4,7 +4,7 @@ const SectionWithImage = () => {
       <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center lg:max-h-[400px]" >
         <div className="max-md:p-8 p-16">
           <div className="mx-auto max-w-2xl">
-            <h2 className="text-4xl font-bold max-md:text-center">
+            <h2 className="text-4xl font-bold max-md:text-center text-verdeLogo">
               Misión
             </h2>
             <div className=" text-gray-500 md:text-xl">

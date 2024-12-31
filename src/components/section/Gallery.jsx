@@ -5,8 +5,8 @@ const Gallery = () => {
     return (
       <section className="overflow-hidden text-neutral-700 bg-bgClaro py-8">
         <div className="container mx-auto lg:px-32 lg:pt-24 text-center">
-          <h2 className="font-bold text-4xl">Galería de imagenes</h2>
-          <p className="mt-4 text-xl">Explora nuestro trabajo y impacto en la comunidad a través de estas imágenes.</p>
+          <h2 className="font-bold text-4xl text-verdeLogo">Galería de imagenes</h2>
+          <p className="font-normal mt-4 text-xl">Explora nuestro trabajo y impacto en la comunidad a través de estas imágenes.</p>
         </div>
         <div className="container mx-auto px-5 py-4 lg:px-32 lg:pt-8">
           <div className="-m-1 flex flex-wrap max-md:flex-col md:-m-2">

@@ -5,7 +5,7 @@ const BlogCard = (props) => {
 
             <div className="p-4">
                 <a href={ props.data.redirect }>
-                    <h3 className="text-lg text-gray-800 line-clamp-2 font-omnes font-light">
+                    <h3 className="text-lg text-gray-800 line-clamp-2 font-omnes font-normal">
                         {props.data.content}
                     </h3>
                 </a>

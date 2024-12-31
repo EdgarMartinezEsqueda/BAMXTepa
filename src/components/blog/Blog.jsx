@@ -5,7 +5,7 @@ import BlogCard from "./BlogCard";
 const Blog = () => {
     return (
       <div className="bg-bgClaro font-light">
-        <h2 className="text-center text-4xl font-bolder tracking-tight pt-12 text-verdeLogo">
+        <h2 className="text-center text-4xl font-bold tracking-tight pt-12 text-verdeLogo">
             Nuestro Blog
           </h2>
         <div className="flex flex-wrap w-full mx-auto justify-center items-center lg:px-0 px-4 lg:py-16 py-2">
