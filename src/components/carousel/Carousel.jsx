@@ -3,28 +3,28 @@ import LoadingImage from "../../assets/loading.webp"
 
 const data = [
     { 
-        "title": "2007", 
+        "year": "2007", 
         "description": "El Banco Diocesano de Alimentos de Tepatitlán se funda, marcando el inicio de una misión para combatir el hambre en nuestra comunidad."},
     { 
-        "title": "2009", 
+        "year": "2009", 
         "description": "El Ayuntamiento de Tepatitlán nos otorga un terreno en comodato, proporcionando un espacio físico para nuestras operaciones."},
     { 
-        "title": "2013", 
+        "year": "2013", 
         "description": "Adquirimos vehículos que nos permiten extender nuestra ayuda a los municipios de la zona de Los Altos."},
     { 
-        "title": "2015", 
+        "year": "2015", 
         "description": "Inauguramos nuestro propio edificio de instalaciones, consolidando nuestra presencia y capacidad operativa."},
     { 
-        "title": "2016", 
+        "year": "2016", 
         "description": " Se inaugura nuestra panadería, ampliando los tipos de alimentos que podemos ofrecer a nuestros beneficiarios."},
     { 
-        "title": "2017", 
+        "year": "2017", 
         "description": "Se inaugura la tortillería, proporcionando un producto esencial para las mesas de nuestras familias beneficiarias."},
     { 
-        "title": "2019", 
+        "year": "2019", 
         "description": "Instalamos una planta procesadora de alimentos, lo que nos permite ofrecer productos fuera de temporada y alimentos preparados."},
     { 
-        "title": "2022", 
+        "year": "2022", 
         "description": "Obtenemos la certificación ISO 22000-2018, demostrando nuestro compromiso con la seguridad y calidad alimentaria."},
 ]
 const images = [...Array( data.length ).keys()].map( n => new URL(`../../assets/carousel/${n}.webp`, import.meta.url).href ); // get only 6 images from the gallery folder
@@ -94,7 +94,7 @@ const Carousel = () => {
             if (currentIndex === index) {
               return (
                 <div key={index} className="text-white flex justify-center flex-col text-center bg-verdeLogo lg:bg-verdeLogo/[0.7] p-4">
-                  <h2 className="text-4xl text-white">{textdata.title}</h2>
+                  <h2 className="text-4xl text-white font-bold">{textdata.year}</h2>
                   <span className="text-xl">
                     <p>{textdata.description}</p>
                   </span>
