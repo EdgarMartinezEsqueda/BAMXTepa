@@ -8,10 +8,10 @@ const SectionWithImage = () => {
               Misión
             </h2>
             <div className=" text-gray-500 md:text-xl lg:text-2xl">
-              <p className="text-justify">
+              <p className="text-justify md:py-1 lg:py-4">
                 Lograr liberar a las familias de la situación de pobreza alimentaria y fomentar el desarrollo de capacidades, evitando ser asistencialistas.
               </p>
-              <p className="max-sm:hidden"> Promovemos la educación y motivamos a las personas para romper el círculo de la pobreza.</p>
+              <p className="max-sm:hidden md:py-1 lg:py-4"> Promovemos la educación y motivamos a las personas para romper el círculo de la pobreza.</p>
             </div>
           </div>
         </div>
