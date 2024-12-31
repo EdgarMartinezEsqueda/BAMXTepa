@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
       
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2" >         
-              <div className="text-center sm:text-left">
+              <div className="text-center sm:text-left max-sm:hidden">
                 <p className="text-lg font-bolder text-white">Puede interesarte</p>
                 <nav aria-label="Footer Helpful Nav" className="mt-8">
                   <ul className="space-y-4 text-sm">
@@ -121,7 +121,7 @@ const Footer = () => {
                 </a>
               </p>
       
-              <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+              <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0" >
                 &copy; 2024 Banco Diocesano de los Altos
               </p>
             </div>
