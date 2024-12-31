@@ -7,13 +7,11 @@ const SectionWithImage = () => {
             <h2 className="text-4xl font-bold max-md:text-center text-verdeLogo">
               Misión
             </h2>
-            <div className=" text-gray-500 md:text-xl">
-              <ul className="list-disc list-inside text-justify">
-                <li>Lograr liberar a familias de la situacion de pobreza alimentaria y de oportunidades, por medio del desarrollo de capacidades.</li>
-                <li>Promover la participacion activa de las personas, evitando a toda costa ser paternalistas o asistencialistas.</li>
-                <li className="max-lg:hidden">Concientizar a las familias que los adultos pero principalmente los niños, necesitan estudios, ademas de comida.</li>
-                <li className="max-lg:hidden">Motivar a las personas para que desarrollen sus capacidades y potencialidades, logrando asi, salir del circulo de la pobreza.</li>
-              </ul>
+            <div className=" text-gray-500 md:text-xl lg:text-2xl">
+              <p className="text-justify">
+                Lograr liberar a las familias de la situación de pobreza alimentaria y fomentar el desarrollo de capacidades, evitando ser asistencialistas.
+              </p>
+              <p className="max-sm:hidden"> Promovemos la educación y motivamos a las personas para romper el círculo de la pobreza.</p>
             </div>
           </div>
         </div>
