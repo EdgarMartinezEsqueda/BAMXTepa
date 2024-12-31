@@ -1,5 +1,5 @@
 // const images = Object.keys( import.meta.glob("../../assets/gallery/*") ).map( url => new URL(url, import.meta.url).href ); // get all images from the gallery folder
-const images = [...Array(6).keys()].map( n => new URL(`../../assets/gallery/Image_${n+1}.webp`, import.meta.url).href ); // get only 6 images from the gallery folder
+const images = [...Array(7).keys()].map( n => new URL(`../../assets/gallery/Image_${n+1}.webp`, import.meta.url).href ); // get only 6 images from the gallery folder
 
 const Gallery = () => {
     return (
@@ -12,16 +12,16 @@ const Gallery = () => {
           <div className="-m-1 flex flex-wrap max-md:flex-col md:-m-2">
             <div className="flex sm:w-1/2 h-1/4 flex-wrap">
               <div className="w-1/2 p-1 md:p-2">
-                <img alt="gallery" className="block h-full w-full rounded-lg max-h-80 object-cover object-center" src={ images[0] } />
-              </div>
-              <div className="w-1/2 p-1 md:p-2">
-                <img alt="gallery" className="block h-full w-full rounded-lg max-h-80 object-cover object-center" src={ images[1] } />
-              </div>
-              <div className="w-full p-1 md:p-2">
                 <img alt="gallery" className="block h-full w-full rounded-lg max-h-80 object-cover object-center" src={ images[2] } />
               </div>
+              <div className="w-1/2 p-1 md:p-2">
+                <img alt="gallery" className="block h-full w-full rounded-lg max-h-80 object-cover object-center" src={ images[0] } />
+              </div>
+              <div className="w-full p-1 md:p-2">
+                <img alt="gallery" className="block h-full w-full rounded-lg max-h-80 object-cover object-center" src={ images[1] } />
+              </div>
             </div>
-            <div className="flex sm:w-1/2 h-1/4 flex-wrap">
+            <div className="flex sm:w-1/2 h-1/ flex-wrap">
               <div className="w-full p-1 md:p-2">
                 <img alt="gallery" className="block h-full w-full rounded-lg max-h-80 object-cover object-center" src={ images[3] } />
               </div>
