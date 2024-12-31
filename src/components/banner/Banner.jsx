@@ -17,7 +17,7 @@ const Banner = () => {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
-              <a href="/productos" className="block w-full rounded bg-verdeLogo px-12 py-3 text-sm font-bolder text-white shadow hover:bg-verdeLogo/70 focus:outline-none focus:ring active:bg-verdeLogo-500 sm:w-auto " >
+              <a href="/nosotros" className="block w-full rounded bg-verdeLogo px-12 py-3 text-sm font-bolder text-white shadow hover:bg-verdeLogo/70 focus:outline-none focus:ring active:bg-verdeLogo-500 sm:w-auto " >
                 Saber más
               </a>
           </div>
