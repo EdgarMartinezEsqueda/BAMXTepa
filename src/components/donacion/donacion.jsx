@@ -4,9 +4,12 @@ export default function Donate() {
     <div className="lg:max-w-5xl py-12 md:py-24 lg:py-32 text-2xl max-lg:m-12 mx-auto">
       <div className="sm:grid lg:grid-cols-2 gap-8 md:gap-12 ">
         <div className="space-y-4 flex flex-col justify-center">
-          <h1 className="text-5xl font-bold tracking-tighter text-verdeLogo">¡Ayúdanos a hacer la diferencia!</h1>
+          <h1 className=" font-omnes text-4xl font-bold tracking-tighter text-verdeLogo">¡Haz la Diferencia Hoy!</h1>
           <p className="text-gray-500 md:text-2xl/relaxed dark:text-gray-400">
-            En el Banco Diocesano de Alimentos de los Altos distribuímos ayudamos a más de 4,700 familias de la zona de Los Altos de Jalisco y Nochistlán (en el estado de Zacatecas).
+            Apoyamos a más de 6,000 familias mensualmente en Los Altos de Jalisco y Nochistlán, Zacatecas.
+          </p>
+          <p className="text-gray-500 md:text-2xl/relaxed dark:text-gray-400">
+            Con tu ayuda, podemos continuar nuestra misión de combatir el hambre y brindar esperanza a quienes más lo necesitan.
           </p>
           <div className="space-y-2">
             <div className="sm:flex items-center justify-between">
@@ -27,19 +30,25 @@ export default function Donate() {
                 </button>
               </div>
             </div>
+            <div className="sm:flex items-center justify-between">
+              <p className="text-amarilloLogo">Paypal</p>
+                <div className="flex items-end ">
+                  <a className="sm:px-4 text-azulCielo" href={import.meta.env.VITE_paypal} target="_blank">Donar</a>
+                </div>
+            </div>
           </div>
         </div>
         <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8 text-xl">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">Nuestra Misión</h3>
             <p className="text-gray-500 dark:text-gray-400">
-            Nuestro objetivo principal es combatir el hambre y la inseguridad alimentaria en la región, rescatando alimentos a lo largo de toda la región para distribuirlos a familias, comunidades e instituciones
+              Nuestro objetivo es combatir el hambre y la inseguridad alimentaria, rescatando alimentos en toda la región para distribuirlos entre familias, comunidades e instituciones.
             </p>
             <p className="text-gray-500 dark:text-gray-400 max-sm:hidden">
-              Su aportación, sea cual sea la cantidad, puede ayudarnos a continuar nuestra labor y ampliar nuestro alcance. Nos comprometemos a utilizar su donación de forma responsable y transparente para garantizar que tenga el mayor impacto posible.
+              Cada donación, sin importar el monto, contribuye a continuar nuestra labor y ampliar nuestro impacto. Nos comprometemos a usar tu apoyo de manera responsable y transparente, asegurando que cada peso se traduzca en alimentos y esperanza para quienes lo necesitan.
             </p>
             <p className="text-gray-500 dark:text-gray-400">
-              Gracias por considerar una donación al Banco de Alimentos de Tepatitlán. Juntos, podemos marcar la diferencia.
+              Gracias por confiar en nosotros y ser parte de este cambio positivo. ¡Hagamos la diferencia, juntos!
             </p>
           </div>
         </div>
