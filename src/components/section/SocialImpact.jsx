@@ -52,7 +52,7 @@ const SocialImpactCard = (title, info, icon, index) =>{
 const SocialImpact = () => {
     return (
     <section className="sm:w-2/3 m-auto py-6">
-        <h1 className="text-4xl text-center text-verdeLogo">Impacto social 2024</h1>
+        <h1 className="font-omnes font-bold text-3xl text-center text-verdeLogo">Impacto social 2024</h1>
         <div className="grid grid-cols-2 sm:gap-4 md:grid-cols-3 text-center">
             { data.map((item, index) => (
                 SocialImpactCard(item.title, item.info, item.icon, index)
