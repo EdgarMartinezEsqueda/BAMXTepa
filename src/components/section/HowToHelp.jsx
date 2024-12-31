@@ -1,23 +1,60 @@
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import FoodBankIcon from '@mui/icons-material/FoodBank';
+import PaidIcon from '@mui/icons-material/Paid';
+import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
+
+const ayudaConEnlace = (Icon, modoAyuda, descripcion, enlace, index) =>{
+  return (
+    <div className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" key={index}>
+      <h2 className="mt-2 font-normal text-amarilloLogo">{ modoAyuda }</h2>
+      <a className="inline-block rounded-full bg-gray-50 text-rojoLogo" href={enlace}>
+        {< Icon />}
+      </a>
+      <p className="mt-2 font-normal">{ descripcion }</p>
+    </div>
+  )
+}
+
 const HowToHelp = () => {
+  const ayuda = [
+    { 
+      Icon: PaidIcon,
+      title: "Donaciones económicas",
+      description: "Aporta para la compra de alimentos esenciales y mantener nuestras operaciones activas.", 
+      donateLink: "/donar" 
+    },
+    { 
+      Icon: FoodBankIcon,
+      title: "Donación de Alimentos",
+      description: "Contribuye con alimentos para garantizar que más familias tengan acceso a comida saludable.", 
+      donateLink: "/contacto" 
+    },
+    { 
+      Icon: VolunteerActivismIcon,
+      title: "Voluntariado",
+      description: "Dona tu tiempo y energía para ayudar con la recolección, clasificación o entrega de alimentos.", 
+      donateLink: "/contacto" 
+    },
+    { 
+      Icon: MiscellaneousServicesIcon,
+      title: "Servicio",
+      description: "Comparte tu experiencia para fortalecer nuestra misión: desde transporte hasta diseño.", 
+      donateLink: "/contacto" 
+    },
+  ];
     return (
-    <section className="p-16">
-      <h1 className="text-verdeLogo text-4xl max-md:text-center">¿Cómo puedes ayudar?</h1>
+    <section className="p-20">
+      <h1 className="font-omnes font-bold text-verdeLogo text-3xl max-lg:text-center">Haz la Diferencia: Súmate a Nuestra Misión</h1>
       <div className="flex">
-        <div className="text-2xl py-4 w-full md:w-2/3">
+        <div className="text-2xl lg:pr-12 w-full">
           <div>
-            <p>Queremos invitarte a ser parte de nuestra misión. Con tu ayuda,<strong className="bg-verdeLogo text-white px-2 rounded-md">podemos llegar a más familias</strong> y asegurar que <strong className="bg-verdeLogo text-white px-2 rounded-md">nadie pase hambre</strong>. No importa el tamaño de tu donación; cada contribución cuenta y tiene un impacto significativo.</p>
-            <p className="lg:hidden"><a href="/contacto" className=" text-verdeLogo hover:px-2 rounded-md hover:bg-verdeLogo hover:text-white">Contáctanos</a> para saber más.</p>
+            <p>Con tu apoyo, podemos,<strong className="bg-amarilloLogo text-white px-2 rounded-md">transformar vidas</strong> y <strong className="bg-amarilloLogo text-white px-2 rounded-md">combatir el hambre</strong>en nuestra comunidad. Descubre cómo puedes contribuir y sé parte del cambio.</p>
           </div>
-          <div>
-            <ul className="py-3 max-lg:hidden">
-              <li className="py-2"><strong className="text-rojoLogo font-black">Dinero:</strong> Nos permite comprar alimentos y cubrir costos operativos.<a href="https://www.paypal.com/donate/?hosted_button_id=WMZEPNJ7BFVV2" target="_blank" className="text-verdeLogo"> Puedes donar en línea</a> o en comunícate a nuestra oficina.</li>
-              <li className="py-2"><strong className="text-rojoLogo font-black">Producto:</strong> Aceptamos alimentos no perecederos y frescos en nuestras instalaciones o en campañas de recolección.</li>
-              <li className="py-2"><strong className="text-rojoLogo font-black">Voluntariado:</strong> Únete a nuestro equipo para clasificar alimentos, distribuir, y organizar eventos. <a href="/contacto" target="_blank" className="text-verdeLogo">Contáctanos</a>.</li>
-              <li className="py-2"><strong className="text-rojoLogo font-black">Servicio:</strong> Si tienes habilidades o una empresa que puede ayudar (transporte, marketing, servicios legales), ofrécenos tu apoyo.</li>
-            </ul>
+          <div className="grid gap-4 lg:grid-cols-2 text-center">
+            { ayuda.map((item, index) => ( ayudaConEnlace( item.Icon, item.title, item.description, item.donateLink, index) )) }
           </div>
         </div>
-        <div className="md:w-1/3 max-md:hidden">
+        <div className="md:w-1/3 max-lg:hidden">
           <div className="bg-happyGirl w-full h-full bg-center bg-cover rounded-full" alt="" />
         </div>
       </div>
