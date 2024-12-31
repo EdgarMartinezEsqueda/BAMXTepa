@@ -8,8 +8,8 @@ const SectionWithImage = () => {
             <h2 className="text-4xl font-bold text-verdeLogo">
               Visión
             </h2>
-            <div className=" text-gray-500 md:text-xl">
-              <p>Lograr un nuevo modelo de familia con cero hambre y una vision clara del desarrollo y auto sustentabilidad. </p>
+            <div className=" text-gray-500 md:text-xl lg:text-2xl">
+              <p className="sm:py-4">Un nuevo modelo de familia con cero hambre, autosuficiente y con una visión clara de desarrollo sostenible.</p>
             </div>
           </div>
         </div>
