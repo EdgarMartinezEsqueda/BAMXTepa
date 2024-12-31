@@ -1,13 +1,13 @@
-
+import imagenContacto from "../../assets/image1.webp"
 
 export default function Home() {
   return (
 <section>
-  <div className="relative w-full h-96"><img className="absolute h-full w-full object-cover object-center" src="https://scontent.fgdl14-1.fna.fbcdn.net/v/t39.30808-6/277574920_1886141125118487_6405027824439256273_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dY1n_NUplxoQ7kNvgEtSaSd&_nc_ht=scontent.fgdl14-1.fna&oh=00_AYAcO45QFnlRR9c_J7-DCa4qnHjNoEj-cFYX3DVF-b1Rgw&oe=66779A5D" alt="nature image" />
+  <div className="relative w-full h-96"><img className="absolute h-full w-full object-cover object-center" src={imagenContacto} alt="nature image" />
     <div className="absolute inset-0 h-full w-full bg-black/50"></div>
     <div className="relative pt-28 text-center">
-      <h2 className="block antialiased tracking-normal leading-[1.3] text-white mb-4 text-3xl lg:text-4xl">Información de contacto</h2>
-      <p className="block antialiased text-2xl leading-relaxed text-white mb-9 opacity-90 px-8 font-extralight">Para cualquier consulta o información adicional, no dudes en contactarnos.
+      <h2 className="block antialiased tracking-normal leading-[1.3] text-white mb-4 text-3xl lg:text-4xl font-omnes font-bold">Información de contacto</h2>
+      <p className="block antialiased text-2xl leading-relaxed text-white mb-9 opacity-90 px-8 font-light">Para cualquier consulta o información adicional, no dudes en contactarnos.
 </p>
     </div>
   </div>
