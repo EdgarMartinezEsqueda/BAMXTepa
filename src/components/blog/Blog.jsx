@@ -4,11 +4,11 @@ import BlogCard from "./BlogCard";
 
 const Blog = () => {
     return (
-      <div className="bg-bgClaro">
-        <h2 className="text-center text-4xl font-bold tracking-tight pt-12">
+      <div className="bg-bgClaro font-light">
+        <h2 className="text-center text-4xl font-bolder tracking-tight pt-12 text-verdeLogo">
             Nuestro Blog
           </h2>
-        <div className="flex flex-wrap w-full mx-auto justify-center items-center lg:px-0 px-4 lg:py-16 py-2 ">
+        <div className="flex flex-wrap w-full mx-auto justify-center items-center lg:px-0 px-4 lg:py-16 py-2">
             <BlogCard data = { {
               content: "Durante el mes de mayo luchamos contra el hambre a través de nuestra colecta #KilosPorLaNutricion buscando la donación de alimento básico como: frijol, arroz, aceite, lentejas, etc 🍚🤗\nConoce cómo estos son de suma importancia para los Bancos de Alimentos y para las comunidades atendidas a través de la Red BAMX 💪 \n#RedBAMX #AlimentoBasico",
               uri: "https://scontent.fgdl5-4.fna.fbcdn.net/v/t39.30808-6/436470151_741637214836499_5119443060105487322_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QcG5TpVdoncQ7kNvgHnNRkN&_nc_ht=scontent.fgdl5-4.fna&oh=00_AYCE8NA9fl-XdTC6FxTnxdWiGqGvDzd0k3ygFtH5yyRYzQ&oe=66497E42",
