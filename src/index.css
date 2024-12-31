@@ -4,38 +4,41 @@
 
 @font-face {
     font-family: "Omnes";
-    src: url("/fonts/Omnes/Omnes\ Regular.ttf");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "Omnes";
-    src: url("/fonts/Omnes/Omnes\ Italic.ttf");
-    font-style: italic;
-}
-@font-face {
-    font-family: "Omnes";
-    src: url("/fonts/Omnes/Omnes\ Light.ttf");
+    src: url("/fonts/Omnes/omnes-regular.ttf");
     font-weight: normal;
 }
 @font-face {
     font-family: "Omnes";
-    src: url("/fonts/Omnes/Omnes\ Medium.ttf");
-    font-weight: bolder;
+    src: url("/fonts/Omnes/Omnes-Hairline.otf");
+    font-style: italic;
 }
-@font-face {
+
+@font-face{
     font-family: "Omnes";
-    src: url("/fonts/Omnes/Omnes\ Hairline.ttf");
+    src: url("/fonts/Omnes/Omnes-Thin.otf");
     font-weight: lighter;
+}
+
+@font-face{
+    font-family: "Omnes";
+    src: url("/fonts/Omnes/omnes-semibold.ttf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "Omnes";
+    src: url("/fonts/Omnes/Omnes-Bold.otf");
+    font-weight: bolder;
 }
 
 @font-face {
     font-family: "Locator";
-    src: url("/fonts/Locator/LocatorDisplay\ Black.ttf");
+    src: url("/fonts/Locator/LOCATODB.OTF");
 }
 
 html {
     font-family: "Omnes";
-    font-weight: bold;
+    font-weight: normal;
 }
 
 h1{
