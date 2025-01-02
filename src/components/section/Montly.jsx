@@ -21,27 +21,26 @@ const data = [  // IMPACT SOCIAL 2024
     },
     {
         title: "Alimento acopiado",
-        info: "100,000 KG",
+        info: "100,000KG",
         icon: FoodBankOutlinedIcon
     }
 ];
 
 const SocialImpactCard = (title, info, Icon, index) =>{
     return (
-        <div className="block rounded-xl p-4 hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" key={index}>
-            <span className="inline-block rounded-full bg-gray-50 p-3 text-rojoLogo">
-                {< Icon />}
+        <div className="block rounded-xl p-4 focus:outline-none focus:ring" key={index}>
+            <span className="inline-block text-amarilloLogo hover:text-rojoLogo">
+                {< Icon className="text-large" />}
             </span>
-            <p className="mt-2 text-3xl font-normal">{ info }</p>
+            <p className="mt-2 text-3xl font-bold">{ info }</p>
             <p className="mt-2 text-xl font-normal">{ title }</p>
         </div>
     )
 }
 const SocialImpact = () => {
     return (
-    <section className="sm:w-2/3 m-auto py-6">
-        <h1 className="font-omnes font-bold text-3xl text-center text-verdeLogo">Mensualmente nosotros</h1>
-        <div className="grid grid-cols-2 sm:gap-4 md:grid-cols-3 text-center">
+    <section className="sm:w-2/3 m-auto">
+        <div className="grid grid-cols-2 sm:gap-4 md:grid-cols-4 text-center">
             { data.map((item, index) => (
                 SocialImpactCard(item.title, item.info, item.icon, index)
             )) }

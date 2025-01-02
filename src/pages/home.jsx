@@ -5,7 +5,7 @@ import Valores from "../components/section/Valores";
 import Gallery from "../components/section/Gallery";
 import Mision from "../components/section/Mision";
 import Vision from "../components/section/Vision";
-import Blog from "../components/blog/Blog";
+import Montly from "../components/section/Montly";
 import AboutUs from "../components/section/AboutUs";
 import MapJalisco from "../components/map/Map";
 
@@ -16,11 +16,11 @@ function LandingPage() {
         <Banner />
         <AboutUs />
         <MapJalisco/>
+        <Montly />
         <Valores />
         <Mision />
         <Vision />
         <Gallery />
-        <Blog /> 
         <Footer />
       </>
   );
