@@ -30,17 +30,17 @@ const SocialImpactCard = (title, info, Icon, index) =>{
     return (
         <div className="block rounded-xl p-4 focus:outline-none focus:ring" key={index}>
             <span className="inline-block text-amarilloLogo hover:text-rojoLogo">
-                {< Icon className="text-large" />}
+                {< Icon fontSize="large" />}
             </span>
-            <p className="mt-2 text-3xl font-bold">{ info }</p>
-            <p className="mt-2 text-xl font-normal">{ title }</p>
+            <p className="mt-2 md:text-xl lg:text-3xl font-bold">{ info }</p>
+            <p className="mt-2 md:text-lg lg:text-xl font-normal">{ title }</p>
         </div>
     )
 }
 const SocialImpact = () => {
     return (
-    <section className="sm:w-2/3 m-auto">
-        <div className="grid grid-cols-2 sm:gap-4 md:grid-cols-4 text-center">
+    <section className="w-full p-8">
+        <div className="w-10/12 lg:w-2/3 m-auto grid grid-cols-2 sm:gap-4 md:grid-cols-4 text-center">
             { data.map((item, index) => (
                 SocialImpactCard(item.title, item.info, item.icon, index)
             )) }
