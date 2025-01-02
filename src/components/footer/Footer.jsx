@@ -3,7 +3,8 @@ import logoBN from "assets/logo/logoModoOscuro.png";
 
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import XIcon from '@mui/icons-material/X';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PhoneIcon from '@mui/icons-material/Phone';
 import PlaceIcon from '@mui/icons-material/Place';
@@ -15,13 +16,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className=" max-lg:flex max-lg:flex-col justify-center items-center">
               <div className="flex justify-center text-teal-600 ">
-                <a href="/">
-                  <img src={ logoBN } alt="Banco Diocesano de los Altos" className="h-24"/>
-                </a>
+                <a href="/"> <img src={ logoBN } alt="Banco Diocesano de los Altos" className="h-24"/> </a>
               </div>
-              <p className="mt-6 max-w-md text-center leading-relaxed text-gris sm:max-w max-lg:w-screen max-lg:flex lg:text-left max-lg:p-2" >
-              Unidos por la solidaridad, alimentando esperanzas. ¡Gracias por apoyar nuestra misión de combatir el hambre en nuestra comunidad!
-              </p>
+              <p className="mt-6 max-w-md text-center leading-relaxed text-gris sm:max-w max-lg:w-screen max-lg:flex lg:text-left max-lg:p-2" > Unidos por la solidaridad, alimentando esperanzas. ¡Gracias por apoyar nuestra misión de combatir el hambre en nuestra comunidad! </p>
               <ul className="mt-8 flex  gap-6 lg:justify-start md:gap-8">
                 <li>
                   <a href="https://www.facebook.com/BAMXTepatitlan" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
@@ -38,7 +35,13 @@ const Footer = () => {
                 <li>
                   <a href="https://twitter.com/bamxtepatitlan" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
                     <span className="sr-only">Twitter</span>
-                    <TwitterIcon/>
+                    <XIcon/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/company/bamxtepatitlan" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
+                    <span className="sr-only">Linkdin</span>
+                    <LinkedInIcon/>
                   </a>
                 </li>
               </ul>
@@ -50,34 +53,22 @@ const Footer = () => {
                 <nav aria-label="Footer Helpful Nav" className="mt-8">
                   <ul className="space-y-4 text-sm">
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/nosotros" >
-                        Nosotros
-                      </a>
+                      <a className="text-gris transition hover:text-gris/75" href="/nosotros" > Nosotros </a>
                     </li>
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/faqs" >
-                        Preguntas frecuentes
-                      </a>
+                      <a className="text-gris transition hover:text-gris/75" href="/faqs" > Preguntas frecuentes </a>
                     </li>
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/donar" >
-                        Donación
-                      </a>
+                      <a className="text-gris transition hover:text-gris/75" href="/donar" > Donación </a>
                     </li>
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/programas" >
-                        Programas
-                      </a>
+                      <a className="text-gris transition hover:text-gris/75" href="/programas" > Programas </a>
                     </li>
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/voluntario" >
-                        Voluntariado
-                      </a>
+                      <a className="text-gris transition hover:text-gris/75" href="/voluntario" > Voluntariado </a>
                     </li>
                     <li>
-                      <a className="text-gris transition hover:text-gris/75" href="/contacto" >
-                        Contacto
-                      </a>
+                      <a className="text-gris transition hover:text-gris/75" href="/contacto" > Contacto </a>
                     </li>
                   </ul>
                 </nav>
@@ -116,13 +107,13 @@ const Footer = () => {
               <p className="text-sm text-gray-500">
                 <span className="block sm:inline">Todos los derechos reservados | </span>
                 <span>&middot;</span>
-                <a className="inline-block text-teal-600 underline transition hover:text-teal-600/75" href="/politica" >
+                <a className="inline-block text-teal-600 underline transition hover:text-teal-600/75" href="/privacidad" >
                   Política de privacidad
                 </a>
               </p>
       
               <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0" >
-                &copy; 2024 Banco Diocesano de los Altos
+                &copy; {new Date().getFullYear()} Banco Diocesano de los Altos
               </p>
             </div>
           </div>
