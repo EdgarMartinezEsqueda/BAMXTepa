@@ -8,6 +8,7 @@ import Donate from "./pages/donate";
 import AboutUs from "./pages/aboutUs";
 import Programs from "./pages/programs";	
 import Voluntariado from "./pages/voluntarios";
+import Privacy from "./pages/privacy";
 
 function App() {
   const routes = [
@@ -18,6 +19,7 @@ function App() {
     { path: "/nosotros", element: <AboutUs /> },
     { path: "/programas", element: <Programs /> },
     { path: "/voluntario", element: <Voluntariado /> },
+    { path: "/privacidad", element: <Privacy /> },
     { path: "*", element: <ErrorPage /> },
   ];
 
