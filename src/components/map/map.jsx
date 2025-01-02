@@ -22,7 +22,7 @@ const options = {
 export default function Mapa(){
     return (
         <div className="md:flex md:items-center">
-            <div className="p-8 lg:p-32 md:w-2/3">
+            <div className="p-8 md:w-2/3">
                 <h2 className="font-bold text-verdeLogo text-4xl max-md:text-center max-md:w-full">Municipios a los que llegamos</h2>
                 <p className="text-xl mt-8">
                     En nuestro compromiso por combatir el hambre, llegamos a más de 85 comunidades en 14 municipios de la región (13 en Jalisco y 1 en Zacatecas).
