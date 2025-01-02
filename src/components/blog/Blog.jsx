@@ -4,7 +4,7 @@ import BlogCard from "./BlogCard";
 
 const Blog = () => {
     return (
-      <div className="bg-bgClaro font-light">
+      <div className="bg-white font-light">
         <h2 className="text-center text-4xl font-bold tracking-tight pt-12 text-verdeLogo">
             Nuestro Blog
           </h2>

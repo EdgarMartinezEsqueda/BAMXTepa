@@ -44,7 +44,7 @@ const preguntas =  [
 ];
 const FAQs = () => {
     return (
-      <section className="bg-bgClaro dark:bg-bgOscuro1">
+      <section className="bg-white dark:bg-bgOscuro1">
         <div className="container px-6 py-12 mx-auto flex flex-col items-center">
           <h1 className="text-center text-gray-800 lg:text-3xl dark:text-white">Preguntas Frecuentes</h1>
 

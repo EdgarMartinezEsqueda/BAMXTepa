@@ -3,7 +3,7 @@ const images = [...Array(7).keys()].map( n => new URL(`../../assets/gallery/Imag
 
 const Gallery = () => {
     return (
-      <section className="overflow-hidden text-neutral-700 bg-bgClaro py-8">
+      <section className="overflow-hidden text-neutral-700 bg-white py-8">
         <div className="container mx-auto lg:px-32 lg:pt-24 text-center">
           <h2 className="font-bold text-4xl text-verdeLogo">Galería de imagenes</h2>
           <p className="font-normal mt-4 text-xl">Explora nuestro trabajo y impacto en la comunidad a través de estas imágenes.</p>

@@ -1,6 +1,6 @@
 const AvisoPrivacidad = () => {
   return (
-    <section className="px-4 py-8 md:px-16 md:py-12 bg-bgClaro text-gray-800">
+    <section className="px-4 py-8 md:px-16 md:py-12 bg-white text-gray-800">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-2xl md:text-4xl font-bold text-center mb-6 text-amarilloLogo">Aviso de Privacidad</h1>
         <p className="mb-4 text-justify">
