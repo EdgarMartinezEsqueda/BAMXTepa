@@ -1,5 +1,5 @@
 import Navbar from "../components/navbar/Navbar";
-import Privacy from "../components/privacy/Privacy";
+import Privacy from "../components/privacy/Privacy.jsx";
 import Footer from "../components/footer/Footer";
 
 const FAQPage = () =>{
