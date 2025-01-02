@@ -18,7 +18,7 @@ const Footer = () => {
               <div className="flex justify-center text-teal-600 ">
                 <a href="/"> <img src={ logoBN } alt="Banco Diocesano de los Altos" className="h-24"/> </a>
               </div>
-              <p className="mt-6 max-w-md text-center leading-relaxed text-gris sm:max-w max-lg:w-screen max-lg:flex lg:text-left max-lg:p-2" > Unidos por la solidaridad, alimentando esperanzas. ¡Gracias por apoyar nuestra misión de combatir el hambre en nuestra comunidad! </p>
+              <p className="mt-6 max-w-md text-center leading-relaxed text-gris sm:max-w max-lg:w-screen max-lg:flex lg:text-left max-lg:p-2 max-sm:hidden" > Unidos por la solidaridad, alimentando esperanzas. ¡Gracias por apoyar nuestra misión de combatir el hambre en nuestra comunidad! </p>
               <ul className="mt-8 flex  gap-6 lg:justify-start md:gap-8">
                 <li>
                   <a href="https://www.facebook.com/BAMXTepatitlan" rel="noreferrer" target="_blank" className="text-amarilloLogo transition hover:text-amarilloLogo/75" >
