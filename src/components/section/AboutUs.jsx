@@ -1,4 +1,3 @@
-import Imagen from "assets/image2.webp";
 const AboutUs = () => {
     return (
       <section className="overflow-hidden bg-aboutUs bg-cover bg-center bg-no-repeat" >
