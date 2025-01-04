@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import LoadingImage from "../../assets/loading.webp"
+import LoadingImage from "assets/loading.webp"
 
 const data = [
     { 
@@ -27,7 +27,10 @@ const data = [
         "year": "2022", 
         "description": "Obtenemos la certificación ISO 22000-2018, demostrando nuestro compromiso con la seguridad y calidad alimentaria."},
 ]
-const images = [...Array( data.length ).keys()].map( n => new URL(`../../assets/carousel/${n}.webp`, import.meta.url).href ); // get only 6 images from the gallery folder
+
+const Images = Object.values(
+  import.meta.glob('assets/carousel/*.webp', { eager: true, query: '?url', import: 'default' })
+).slice(0, data.length);
 
 const Arrow = ({ arrowStyle }) => {
   return (
@@ -56,11 +59,11 @@ const Carousel = () => {
   const [loading, setLoading] = useState(false);
 
   const increaseIndex = () => {
-    setCurrentIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex(prevIndex => (prevIndex === Images.length - 1 ? 0 : prevIndex + 1));
   };
 
   const decreaseIndex = () => {
-    setCurrentIndex(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setCurrentIndex(prevIndex => (prevIndex === 0 ? Images.length - 1 : prevIndex - 1));
   };
 
   useEffect(() => {
@@ -74,10 +77,10 @@ const Carousel = () => {
           <Arrow />
         </div>
         <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {images.map((img, index) => (
+          {Images.map((Img, index) => (
             <div key={index} className=" w-full flex-shrink-0 ">
               <img
-                src={loading ? LoadingImage : img}
+                src={loading ? LoadingImage : Img}
                 alt="Multiple images for slide and show"
                 className="object-cover w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] max-lg:-top-1/2"
                 onLoad={() => setLoading(false)}
@@ -105,7 +108,7 @@ const Carousel = () => {
         </div>
         {/* custom dot portion */}
         <div className="absolute bottom-2 inset-x-0 flex flex-row gap-2 justify-center">
-          {images.map((_, index) => (
+          {Images.map((_, index) => (
             <div
               key={index}
               className={`w-2 h-2 ${currentIndex === index ? 'bg-gray-400' : 'bg-gray-600'} rounded-full cursor-pointer`}
