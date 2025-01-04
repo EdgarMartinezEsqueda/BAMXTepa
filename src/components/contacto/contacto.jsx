@@ -1,4 +1,4 @@
-import imagenContacto from "../../assets/home/image_3.webp"
+import imagenContacto from "assets/home/image_3.webp"
 
 export default function Home() {
   return (

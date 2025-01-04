@@ -1,6 +1,6 @@
-import ApadrinaUnaFamilia from "../../assets/programas/apadrinaUnaFamilia.webp"
-import ComerEnFamilia from "../../assets/programas/comerEnFamilia.webp"
-import VoluntarioAlVolante from "../../assets/programas/volante.webp"
+import ApadrinaUnaFamilia from "assets/programas/apadrinaUnaFamilia.webp"
+import ComerEnFamilia from "assets/programas/comerEnFamilia.webp"
+import VoluntarioAlVolante from "assets/programas/volante.webp"
 
 export default function Programs() {
     return (
