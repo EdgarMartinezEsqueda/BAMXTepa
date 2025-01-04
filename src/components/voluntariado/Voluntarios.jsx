@@ -1,7 +1,7 @@
-import VoluntarioArmado from "../../assets/voluntariado/armado.webp";
-import VoluntarioCarga from "../../assets/voluntariado/ruta.webp";
-import VoluntarioSeleccionar from "../../assets/voluntariado/seleccion.webp";
-import VoluntarioProduccion from "../../assets/voluntariado/produccion.webp";
+import VoluntarioArmado from "assets/voluntariado/armado.webp";
+import VoluntarioCarga from "assets/voluntariado/ruta.webp";
+import VoluntarioSeleccionar from "assets/voluntariado/seleccion.webp";
+import VoluntarioProduccion from "assets/voluntariado/produccion.webp";
 export default function Voluntariado() {
     return (
       <section className="w-full py-12">
