@@ -9,7 +9,7 @@ export default defineConfig({
     alias: {
       components: path.resolve(__dirname, "./src/components"),
       assets: path.resolve(__dirname, "./src/assets"),
-      fonts: path.resolve(__dirname, "./fonts"),
+      fonts: path.resolve(__dirname, "./public/fonts"),
     },
     base: "./",
   },
